@@ -173,7 +173,7 @@ public:
 template<class T>
 concept IterToComparable =  // назвали наше ограничение
 requires(T a, T b) {
-    {*a < *b} -> std::convertible_to<bool>;
+    {*a < *b} -> std::convertible_to<bool>; результат сравнения что-то конвертируемое в bool, то есть сам bool например
 };
 
 
